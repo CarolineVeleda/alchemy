@@ -1,0 +1,16 @@
+
+{% extends "index.html" %}
+{% block content %}
+
+<form action="/d/inserir" method="POST">
+    Nome departamento:
+    <input name="nome" type="text">
+    <br>
+    <input type="hidden" name="id">
+    <br>
+    <input type="submit">
+
+</form>
+
+
+{% endblock %}

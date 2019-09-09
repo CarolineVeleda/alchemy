@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block content %}
+
+<form action="/d/salvar" method="POST">
+    Nome:
+    <input value="{{depto.nome}}" name="nome" type="text">
+    <br>
+    <input value="{{depto.id}}" name="id" type="hidden">
+    <br>
+    <input type="submit">
+
+</form>
+
+
+{% endblock %}
