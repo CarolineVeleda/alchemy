@@ -2,12 +2,20 @@
 {% extends "index.html" %}
 {% block content %}
 
-<form action="/d/inserir" method="POST">
+<form action="/d/salvar" method="POST">
     Nome departamento:
     <input name="nome" type="text">
     <br>
-    <input type="hidden" name="id">
     <br>
+    Rua:
+    <input name="rua" type="text">
+    <br>
+    <br>
+    Nº:
+    <input name="numero" type="number">
+    <input name="iddepartamento" type="hidden">
+    <input name="idendereco" type="hidden">
+
     <input type="submit">
 
 </form>
